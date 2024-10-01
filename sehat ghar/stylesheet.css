@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+                                                  /* HOMEPAGE */
+/* Navbar */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    align-items: center;
+    position: relative;
+}
+#navbar img{
+    height: 30px;
+    width: 150px;
+    cursor: pointer;
+}
+.links{
+    display: flex;
+}
+.links a{
+    text-decoration: none;
+    /* color: #223477!important; */
+    font-size: 17px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.links .dropdown button{
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    /* padding: 14px 16px; */
+    background-color: inherit;
+    color: #223477!important;
+    font-family: sans-serif;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.btn_content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.btn_content a{
+    font-size: 17px;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    background-color:#223477;
+    color: white;
+}
+.btn_content a:hover{
+    background-color: #2f5c9f;
+}
+.dropdown:hover .btn_content{
+    display: block;
+}
+.setting i{
+    color: #2f5c9f;
+    font-size: 28px;
+    cursor: pointer;
+}
+/* @media screen and (max-width: 600px) {
+    #navbar {
+      display: flex;
+      flex-direction: column;
+    }
+}  */
+
+
+@media screen and (min-width: 700px) {
+    .setting i{
+        display: none;
+    }
+} 
+@media screen and (max-width: 700px) {
+    .links{
+      display: none;
+      position: absolute;
+      top:50px;
+    }
+    .links a{
+        display: block;
+    }
+}
+/* @media screen and (max-width: 350px) {
+    .links {
+      display: none;
+    }
+} */
+#search-bars{
+    display: flex;
+    justify-content: center;
+}
+.location{
+    position: relative;
+}
+.location input{
+    padding: 6px 30px 6px 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+}
+.location i{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.search input{
+    width: 650px;
+}
+@media screen and (max-width: 700px) {
+    #search-bars {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    .search input{
+        width: 250px;
+    }
+}
+/* Hero Section */
+#herosection{
+    background-color: #223477;
+    height: 25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+}
+#herosection .text{
+    font-family: sans-serif;
+    color: white;
+    line-height: 2;
+    font-size: larger;
+}
+#herosection .img img{
+    height: 250px;
+    width: 350px;
+    border-radius: 20px;
+}
+@media screen and (max-width: 700px) {
+    #herosection{
+        display: flex;
+        flex-direction: column;
+        height: 35rem;
+        margin-top: 100px;
+    }
+    #herosection .text{
+        line-height: 1;
+    }
+}
+/* All specialities */
+#white_bg{
+    
+    background-color: white;
+    height: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+#specialities{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+#specialities .description{
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+#specialities button{
+    padding: 0px 20px;
+    color: rgb(22, 160, 133);
+    background-color: transparent;
+    border: 1px solid rgb(22, 160, 133);
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.specialities_img{
+    display: flex;
+    /* justify-content: space-around; */
+}
+.specialities_img img{
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    padding: 20px;
+    margin: 5px;
+}
+.specialities_img figcaption{
+    color: #223477;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 10px;
+}
+/* @media screen and (max-width: 600px) {
+    .specialities_img{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+} */
+
+/* WORKS */
+#grey_bg{
+    background-color: hsla(0,0%,96%,.55);
+    font-family: sans-serif;
+    /* height: 30rem; */
+}
+.works{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 3;
+    padding-top: 50px;
+}
+.works h5{
+    color: rgb(22, 160, 133);
+    letter-spacing: 3px;
+}
+#grey_bg .works h1, p{
+    color: #223477;
+}
+.works p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 74%;
+    line-height: 1.7;
+}
+/* about */
+.about{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    margin-top: 50px;
+}
+.item1{
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+}
+.item1 img{
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+}
+.item1 h4{
+    color: rgb(22, 160, 133);
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+.item1 p{
+    color:#324897;
+    font-size: 14px;
+    font-weight: bold;
+    width: 150px;
+    line-height: 1.6;
+}
+@media screen and (max-width: 600px) {
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* join_team */
+.join_team{
+    display: flex;
+    justify-content: center;
+    margin: 70px 0;
+}
+.join_team img{
+    height: 210px;
+    width: 300px;
+}
+.join_team .team_description h3{
+    margin: 30px 0;
+    color: #343a40;
+}
+.join_team .team_description p{
+    color: #343a40;
+    font-size: 13px;
+    width: 36rem;
+    line-height: 1.5;
+}
+.join_team .team_description button{
+    background-color: rgba(34,52,119,.85);
+    color: white;
+    letter-spacing: .15px;
+    font-family: Overpass,sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 15px 15px;
+    margin: 30px 0;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    .join_team{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+/* articles */
+.row1{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px;
+}
+.articles{
+    background-color: white;
+    border-radius: 30px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.5);
+}
+.articles figure{
+    cursor: pointer;
+}
+.articles figure img{
+    height: 170px;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.articles figcaption{
+    padding: 30px;
+    color: #343a40;
+    letter-spacing: 1px;
+}
+.articles figcaption h4{
+    width: 100%;
+    line-height: 1.5;
+}
+.articles figcaption p{
+    color: #343a40;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+}
+.articles .about{
+    padding-bottom: 20px;
+}
+.articles .about p{
+    color: #343a40;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.articles .about{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+.articles .about h5{
+    background-color: rgb(195, 195, 195);
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+.articles .about img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+/* View All Button */
+.view_btn{
+    display: flex;
+    justify-content: center;
+}
+.view_btn button{
+    font-family: Overpass,sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: .5px;
+    border: 1px solid #223477;
+    color: #223477;
+    border-radius: 20px;
+    padding: 5px 35px;
+    cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+    .row1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px;
+    }
+}
+/* Book an Appointment */
+.book_appointment{
+    display: flex;
+    margin-top: 50px;
+    background-image: url('./homepage\ images/bg\ image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+    padding-top: 30px;
+}
+.appointment_form{
+    background-color: white;
+    margin: 50px;
+    width: 30rem;
+    padding: 30px 7px;
+    border-radius: 30px;
+}
+input::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+.name_email{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.name_email input{
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(109, 108, 108);
+    margin: 30px 10px 0px;
+}
+.field-container {
+    position: relative;
+}
+.country_code {
+    position: absolute;
+    top: 70%;
+    left: 8px; 
+    transform: translateY(-50%);
+    font-weight: bold; 
+    padding: 8px 8px; 
+    color: green;
+}
+#ph_no::placeholder{
+    text-align: center;
+}
+input[type="date"] {
+    padding: 10px 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.address input, select{
+    width: 24.5rem;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: 1px solid rgb(109, 108, 108);
+    margin: 30px 35px 0px;
+}
+.patient_condition input{
+    padding-bottom: 7rem;
+}
+.appointment_btn input{
+    background-color: #223477e6;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 5px;
+    font-weight: bold;
+    word-spacing: 2px;
+    cursor: pointer;
+}
+.service_status{
+    color: white;
+    margin: 15rem 3rem;
+    text-align: center;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.service_status h2{
+    font-size: 35px;
+}
+.service_status h1{
+    font-size: 5rem;
+    margin: 25px 0 0px;
+}
+@media screen and (max-width: 900px) {
+    .book_appointment{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* feedback_reveiews */
+#feedback_reviews{
+    background-color: #223477;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding-top: 50px;
+    height: 23rem;
+    position: relative;
+    border-radius: 40px;
+}
+.feedback{
+    text-align: center;
+}
+.feedback h4{
+    color: rgb(22, 160, 133);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 4;
+}
+.feedback p{
+    color: white;
+    font-size: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.reviews{
+    background-color: rgb(225, 223, 223);
+    height: 18rem;
+    width: 40rem;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    border-radius: 40px;
+}
